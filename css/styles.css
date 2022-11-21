@@ -1,0 +1,266 @@
+:root {
+    --branco: #ffffff;
+    --preto: #212121;
+    --amarelo: #ffc107;
+    --azul: #0097a7;
+    --cinza: #757575;
+}
+
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 16px;
+    font-family: 'Krub', sans-serif;
+    background-image: linear-gradient(to top, #DFE9F3 0%, #FFFFFF 100%);
+}
+
+h1 {
+    font-size: 3.8rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.8rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+h1 span {
+    font-size: 2rem;
+}
+
+.conteiner {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.titulo2 {
+    color: #ffffff;
+}
+
+.titulo2 span {
+    font-size: 2rem;
+}
+
+.flex {
+display: flex;
+}
+
+.alinhar {
+justify-content: center;
+}
+
+.nav-bg {
+    background-color: #0097a7;
+}
+
+.navegacao {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .navegacao {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.navegacao a {
+    display: block;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.navegacao a:hover {
+    background-color: #ffc107;
+    color: #212121;
+}
+
+.imagem {
+    background-image: url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.conteudo-imagem {
+    position: absolute;
+    background-color: rgba( 0, 0, 0, .7 );
+    width: 100%;
+    height: 100%;
+
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo-imagem h2 {
+    color: #ffffff;
+}
+
+.conteudo-imagem p {
+    display: flex;
+    align-items: inherit;
+    color: #ffffff;
+}
+
+.botao, 
+.botao2 {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #0097a7;
+    padding: 1rem 3rem;
+    margin-top: 5rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    border: none;
+}
+
+.botao:hover {
+    background-color: #ffc107;
+    color: #212121;
+    cursor: pointer;
+}
+
+.botao2:hover {
+    background-color: #ffc107;
+    color: #212121;
+    cursor: pointer;
+}
+
+main {
+    margin: 0rem 30rem;
+}
+
+
+.sombra {
+    
+    box-shadow: 0px 5px 15px 0px rgba(112,112,112,48%);
+    background-color: #FFFFFF;
+    padding: 2rem;
+    border-radius: 1em;
+}
+
+.meus-servicos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1rem;
+}
+
+.servico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servico h3 {
+    color: #0097a7;
+    font-weight: normal;
+}
+.servico p {
+    line-height: 2;
+    text-align: center;
+}
+.icones {
+    height: 15rem;
+    width: 15rem;
+    background-color: #ffc107;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.formulario {
+    background-color: #757575;
+    width: min( 60rem, 100% );
+    margin: 0 auto;
+    padding: 2rem 4rem;
+    border-radius: 1rem;
+}
+
+.formulario fieldset {
+    border: none;
+    padding: 0.75em 0.75em 0.75em;
+    
+}
+
+.formulario legend {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    color: #ffc107;
+}
+
+.conteiner-campos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto 20rem;
+    column-gap: 4rem;
+}
+
+.campo {
+    margin-bottom: 1rem;
+
+}
+
+.campo label {
+    color:#FFFFFF;
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+
+.campo textarea {
+    display: grid;
+    height: 20rem;
+    width: 56rem;
+    grid-column: 1 / 4 ;
+    border-radius: .5rem;
+
+}
+
+.input-text {
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+}
+
+.email {
+    grid-column: 1 / 3 ;
+}
+
+.mensagem {
+    grid-column: 1 / 4;
+    grid-template-columns: 1fr;
+    border-radius: .5rem;
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
